@@ -53,6 +53,14 @@ github token is unavailable or expires. Default is false.
 | ------------------- | ----------------------------------------------- |
 | `fallback-on-error` | use the fallback runner if there are any errors |
 
+
+### Required Permission for Fine Grained Personal Access Token 
+| ------------------- | ------------------------------------------------------------------------------------------- |
+| default             | ["Administration" repository permissions (read)](https://docs.github.com/en/rest/actions/self-hosted-runners#list-self-hosted-runners-for-a-repository) |
+| with `organization` | ["Self-hosted runners" organization permissions (read)](https://docs.github.com/en/rest/actions/self-hosted-runners#list-self-hosted-runners-for-an-organization) |
+| with `enterprise`   | [Can not use Personal Access Token](https://docs.github.com/en/enterprise-cloud@latest/rest/actions/self-hosted-runners#list-self-hosted-runners-for-an-enterprise)  |
+
+
 ### Example
 
 ```yaml
